@@ -6,9 +6,12 @@ const Outputs = () => {
     const { state } = useLocation();
 
     return (
-        <div>
-            Outputs
-            <button> <NavLink exact to='/' > Back</NavLink> </button>
+        <div className='container' >
+            <div style={{ marginBottom: "50px" }} >
+
+                <h1>Outputs</h1>
+            </div>
+
 
 
             <div>
@@ -39,7 +42,12 @@ const Outputs = () => {
                     </tbody>
                 </table>
             </div>
-        </div>
+
+            <div style={{ marginTop: "100px", textAlign: "center" }} >
+                <button style={{ backgroundColor: "grey", width: "100px" }} >
+                    <NavLink exact to='/' style={{ color: "black" }} > Back</NavLink> </button>
+            </div>
+        </div >
     )
 }
 

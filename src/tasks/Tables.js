@@ -85,8 +85,8 @@ const Tables = () => {
     }
 
     return (
-        <div>
-            <h1>Interview Task</h1>
+        <div className='container' style={{ marginTop: 50, fontSize: "20px" }} >
+
             <div>
                 <table style={{ width: '80%', margin: "auto" }}>
                     <thead >
@@ -103,7 +103,7 @@ const Tables = () => {
                     <tbody>
                         {row.map((e, i) => {
                             return (
-                                <tr key={e.id}>
+                                <tr key={e.id}  >
                                     <td>
                                         <input type="checkbox" checked={e.isChecked} value={e.isChecked} onChange={() => _handleChecked(e)} />
                                     </td>
@@ -136,7 +136,7 @@ const Tables = () => {
                     <tbody>
                         {tableTwo.map((e, i) => {
                             return (
-                                <tr key={i}>
+                                <tr key={i} style={{ fontWeight: "bold" }}>
                                     <td style={{ border: '1px solid black' }}>{`${e.pick_number}`}</td>
                                     <td style={{ border: '1px solid black' }}>{`${e.control_id}`}</td>
                                     <td style={{ border: '1px solid black' }}>{`${e.order_no}`}</td>
@@ -149,8 +149,9 @@ const Tables = () => {
                     </tbody>
                 </table>
             </div>
-            {/* <NavLink exact to='outputs'>Save</NavLink>  */}
-            <button onClick={() => navigate('/outputs', { state: tableTwo })}>Save</button>
+            <div style={{ marginTop: 50, textAlign: "center" }}  >
+                <button style={{ backgroundColor: "grey", width: "100px" }} onClick={() => navigate('/outputs', { state: tableTwo })}>Save</button>
+            </div>
         </div>
     )
 }
