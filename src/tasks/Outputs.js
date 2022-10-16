@@ -45,7 +45,7 @@ const Outputs = () => {
 
             <div style={{ marginTop: "100px", textAlign: "center" }} >
                 <button style={{ backgroundColor: "grey", width: "100px" }} >
-                    <NavLink exact to='/' style={{ color: "black" }} > Back</NavLink> </button>
+                    <NavLink exact to='/shipment' style={{ color: "black" }} > Back</NavLink> </button>
             </div>
         </div >
     )
